@@ -116,8 +116,17 @@ body {
         column-gap: 20px;
     }
 
-    input[name="orange-button2"] {
-        display: none;
+    .navigation-button.one{
+        display:none;
+    }
+
+    .navigation-button.two{
+        width: 540px;
+        padding:15px 0px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 36;
+        margin-bottom: 20%;
     }
 
     .logo {
@@ -200,6 +209,19 @@ body {
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+    .navigation-button.one{
+        display:none;
+    }
+
+    .navigation-button.two{
+        width: 540px;
+        padding:15px 0px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 36;
+        margin-bottom: 20%;
+    }
+
     .form2 {
         display: none;
     }
@@ -227,10 +249,6 @@ body {
         margin-left: 60%;
         width: 40px;
         height: 40px;
-    }
-
-    input[name="orange-button2"] {
-        display: none;
     }
 
     /*panel with the people cards*/
@@ -316,6 +334,17 @@ body {
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+    .navigation-button.one{
+        position:absolute;
+        text-decoration: none;
+        width: 80vw;
+        text-align: center;
+    }
+
+    .navigation-button.two{
+        display:none;
+    }
+
     .main-heading {
         margin-top: 150px;
     }
@@ -343,10 +372,6 @@ body {
     /*panel with the people cards*/
     .flex-contributors {
         row-gap: 20px;
-    }
-
-    input[name="orange-button1"] {
-        display: none;
     }
 
     .logo {
@@ -523,40 +548,6 @@ body {
 
 /* -------------- */
 
-input[name="orange-button1"] {
-    width: 540px;
-    height: 60px;
-    background: #F16529;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
-
-    text-transform: uppercase;
-    margin: 75px 0;
-    color: #FFFFFF;
-    align-self: center;
-}
-
-input[name="orange-button2"] {
-    position: absolute;
-    width: 85vw;
-    height: 25px;
-    background: #F16529;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 21px;
-
-    text-transform: uppercase;
-    margin-top:20%;
-    color: #FFFFFF;
-    align-self: center;
-}
 
 /* logos */
 .logo {
@@ -600,4 +591,18 @@ footer>p {
     text-align: center;
     margin: 0 10%;
     color: #373737;
+}
+
+.navigation-button{
+    background: #F16529;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+
+    text-transform: uppercase;
+    margin-top:20%;
+    color: #FFFFFF;
+    align-self: center;
 }
