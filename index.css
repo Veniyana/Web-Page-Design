@@ -12,7 +12,6 @@ body {
 .text {
     font-family: Roboto;
     font-style: normal;
-
     display: flex;
     align-items: center;
     text-align: center;
@@ -26,14 +25,12 @@ body {
 .navigation-button {
     background: #F16529;
     color: #FFFFFF;
-
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     align-self: center;
 }
-
 
 .steps-container,
 .flex-contributors {
@@ -42,10 +39,6 @@ body {
     align-self: center;
 }
 
-
-/*panel with the steps and arrows*/
-
-/* box of each step */
 .step-box {
     padding: 10px;
     border: 1px solid #DCDCDC;
@@ -54,7 +47,6 @@ body {
     column-gap: 20px;
 }
 
-/*the number images 1,2,3*/
 .step-box>img {
     align-self: center;
     padding-left: 10px;
@@ -73,14 +65,10 @@ body {
     font-size: 16px;
 }
 
-/* the arrow image */
 .steps-container>img {
     align-self: center;
 }
 
-/* -------------- */
-
-/* each person box*/
 .contributor {
     width: 1fr;
     padding: 10px;
@@ -90,7 +78,6 @@ body {
     flex-direction: row;
 }
 
-/* image for person */
 .contributor img {
     border-radius: 50%;
     width: 100px;
@@ -113,10 +100,6 @@ body {
     text-align: left;
 }
 
-/* -------------- */
-
-
-/* logos */
 .logo {
     display: flex;
     flex-direction: row;
@@ -124,8 +107,6 @@ body {
     align-self: center;
     margin-bottom: 75px;
 }
-
-/* footer of the page */
 
 footer {
     width: 100vw;
@@ -151,11 +132,9 @@ footer>p {
     justify-content: center;
 }
 
+/*Desktop mode*/
+@media only screen and (min-width: 1024px) {
 
-/* Desktop mode */
-@media only screen and (min-width: 1000px) {
-
-    /* main image */
     #head-image {
         position: absolute;
         height: 400px;
@@ -211,7 +190,6 @@ footer>p {
         height: 100px;
     }
 
-    /*panel with the people cards*/
     .flex-contributors {
         column-gap: 20px;
     }
@@ -222,9 +200,8 @@ footer>p {
 }
 
 /* Tablet mode */
-@media only screen and (min-width: 600px) and (max-width:1000px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-    /* main image */
     #head-image {
         position: absolute;
         height: 200px;
@@ -252,14 +229,13 @@ footer>p {
     }
 
     .steps-container>img {
-        margin-left:70vw;
+        margin-left: 70vw;
     }
 }
 
 /*mobile phones*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
 
-    /* main image*/
     #head-image {
         position: absolute;
         width: 100vw;
@@ -279,7 +255,6 @@ footer>p {
         display: none;
     }
 
-    /* form with email and submit button */
     .mobile-form {
         width: 90vw;
         height: 180px;
@@ -290,37 +265,30 @@ footer>p {
 
     .mobile-form h1 {
         width: 80%;
-
         font-weight: bold;
         font-size: 24px;
         line-height: 28px;
-
         display: flex;
         text-align: center;
         padding-left: 10%;
-
         color: #FFFFFF;
     }
 
-    /* form button submit*/
     .mobile-form input[type="submit"] {
         width: 90%;
         height: 30px;
         margin: 5% 0 0 5%;
         background-color: #FFDE25;
-
         font-weight: bold;
         font-size: 12px;
         text-transform: uppercase;
         color: #FFFFFF;
     }
 
-    /* form text field*/
     .mobile-form input[type="email"] {
         width: 90%;
         margin-left: 5%;
         height: 30px;
-
         background: #FFFFFF;
         border: 1px solid #E1D5D5;
         box-sizing: border-box;
@@ -356,16 +324,12 @@ footer>p {
 }
 
 /*Desktop and tablet*/
-@media only screen and (min-width: 1000px),
-only screen and (min-width: 600px) and (max-width:1000px) {
-
-    /* form with email and submit button */
+@media only screen and (min-width:768px) {
     .default-form {
         position: absolute;
         background: rgba(63, 63, 63, 0.6);
     }
 
-    /* header of the form*/
     .default-form h1 {
         padding-left: 10px;
         font-weight: bold;
@@ -373,7 +337,6 @@ only screen and (min-width: 600px) and (max-width:1000px) {
         color: #FFFFFF;
     }
 
-    /* form button submit*/
     .default-form input[type="submit"] {
         width: 90%;
         margin: 5% 0 0 5%;
@@ -386,11 +349,9 @@ only screen and (min-width: 600px) and (max-width:1000px) {
         text-transform: uppercase;
     }
 
-    /* form text field*/
     .default-form input[type="email"] {
         width: 90%;
         margin-left: 5%;
-
         background: #FFFFFF;
         border: 1px solid #E1D5D5;
         box-sizing: border-box;
@@ -411,12 +372,10 @@ only screen and (min-width: 600px) and (max-width:1000px) {
         font-size: 36;
         margin: 75px 0;
     }
-
 }
 
 /* mobile and tablet*/
-@media only screen and (max-width: 600px),
-only screen and (min-width: 600px) and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
 
     .steps-container,
     .flex-contributors {
@@ -438,7 +397,6 @@ only screen and (min-width: 600px) and (max-width:1000px) {
         height: 40px;
     }
 
-    /*panel with the people cards*/
     .flex-contributors {
         row-gap: 20px;
     }

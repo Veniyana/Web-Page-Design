@@ -6,8 +6,9 @@ const emailValidation = (input) =>
 const handleClickEvent = (event) => {
   const emailDefault = document.getElementById("email-default").value || "";
   const emailMobile = document.getElementById("email-mobile").value || "";
+
   if (emailValidation(emailDefault) || emailValidation(emailMobile)) {
-    alert("Successfull submit!");
+    alert("Successful submit!");
   } else {
     event.preventDefault();
     alert("Enter a valid email!");
