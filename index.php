@@ -1,3 +1,7 @@
+<?php
+// database connection
+require_once('database.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,23 +9,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
     <title>Lorem ipsum dolor sit amet</title>
 </head>
 
 <body>
+<div class="php-email">
+	<?php
+		if (isset($_POST['create-email'])) {
+		 	$email = $_POST['email'];
+            $sql = "INSERT INTO email (email) VALUES (?)";
+            $stmtinsert = $conn->prepare($sql);
+            $result = $stmtinsert->execute([$email]);
+            $sql_u = "SELECT * FROM `email` WHERE email = '".$email."'";
+            $result_u = $conn->query($sql_u);
+		 	}
+	?>
+</div>
+
     <div class="wrapper">
         <div>
-            <img src="./img/image11.png" id="image11">
+            <img src="./img/head-image.png" id="head-image">
         </div>
 
         <a href="#mobile-form" class="navigation-button one">Lorem ipsum dolor sit amet</a>
 
         <!-- the form with the email and submit button -->
-        <form id="default-form" class="default-form">
+        <form id="default-form" class="default-form"  method="post">
             <h1>Lorem ipsum dolor sit amet</h1>
-            <input type="email" placeholder="EMAIL" />
-            <input type="button" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent()">
+            <input type="email" name="email"placeholder="EMAIL" />
+            <input type="submit" name="create-email" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent()">
         </form>
 
 
@@ -37,7 +54,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur</p>
                 </div>
             </div>
-            <img src="img/Polygon 4.png">
+            <img src="img/triangle.png">
             <div class="step-box">
                 <img src="./img/2.png">
 
@@ -46,7 +63,7 @@
                     <p class="text">Lorem ipsum dolor sit amet, consectetur</p>
                 </div>
             </div>
-            <img src="img/Polygon 4.png">
+            <img src="img/triangle.png">
             <div class="step-box">
                 <img src="./img/3.png">
 
@@ -65,7 +82,7 @@
 
         <div class="flex-contributors">
             <div class="contributor">
-                <img src="img/AdobeStock_315787684 1.png">
+                <img src="img/woman-icon.png">
                 <div class="contributor-information">
                     <p class="text">Lorem ipsum dolor sit amet</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat quam sem, id
@@ -75,7 +92,7 @@
                 </div>
             </div>
             <div class="contributor">
-                <img src="img/AdobeStock_123979217 1.png">
+                <img src="img/man-icon.png">
                 <div class="contributor-information">
                     <p class="text">Lorem ipsum dolor sit amet</p>
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat quam sem, id
@@ -89,20 +106,20 @@
 
         <a href="#default-form" class="navigation-button two">Lorem ipsum dolor sit amet</a>
 
-        <form id="mobile-form" class="mobile-form">
+        <form id="mobile-form" class="mobile-form"  method="post">
             <h1 class="text">Lorem ipsum dolor sit amet</h1>
-            <input type="email" placeholder="EMAIL" />
-            <input type="button" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent()">
+            <input type="email" name="email" placeholder="EMAIL" />
+            <input type="submit" name="create-email" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent()">
         </form>
 
 
 
         <div class="logo">
-            <img src="./img/pngguru 5.png">
-            <img src="./img/pngguru 6.png">
-            <img src="./img/pngguru 7.png">
-            <img src="./img/pngguru 8.png">
-            <img src="./img/pngguru 9.png">
+            <img src="./img/globe.png">
+            <img src="./img/html-logo.png">
+            <img src="./img/js-logo.png">
+            <img src="./img/css-logo.png">
+            <img src="./img/wordpress-logo.png">
         </div>
 
 
