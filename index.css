@@ -142,7 +142,7 @@ footer>p {
     display: flex;
     column-gap: 15px;
     justify-content: center;
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 .links>a {
@@ -216,8 +216,8 @@ footer>p {
         column-gap: 20px;
     }
 
-    footer>p{
-        margin:0 25%;
+    footer>p {
+        margin: 0 25%;
     }
 }
 
@@ -251,7 +251,9 @@ footer>p {
         display: none;
     }
 
-
+    .steps-container>img {
+        margin-left:70vw;
+    }
 }
 
 /*mobile phones*/
