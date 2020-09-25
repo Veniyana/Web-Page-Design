@@ -1,3 +1,3 @@
 const handleClickEvent=()=>{
-    alert("Successfully submit!");
+    alert("Form submitted!")
 }
