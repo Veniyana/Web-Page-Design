@@ -37,7 +37,7 @@ require_once('database.php');
         <!-- the form with the email and submit button -->
         <form id="default-form" class="default-form"  method="post">
             <h1>Lorem ipsum dolor sit amet</h1>
-            <input type="email" id="email" class="email" name="email"placeholder="EMAIL" />
+            <input type="email" id="email-default" class="email" name="email"placeholder="EMAIL" />
             <input type="submit" name="create-email" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent(event)">
         </form>
 
@@ -108,7 +108,7 @@ require_once('database.php');
 
         <form id="mobile-form" class="mobile-form"  method="post">
             <h1 class="text">Lorem ipsum dolor sit amet</h1>
-            <input type="email" class="email" name="email" placeholder="EMAIL" />
+            <input type="email" id="email-mobile" class="email" name="email" placeholder="EMAIL" />
             <input type="submit" name="create-email" value="Lorem ipsum dolor sit amet" onclick="handleClickEvent(event)">
         </form>
 

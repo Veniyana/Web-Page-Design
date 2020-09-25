@@ -4,9 +4,9 @@ const emailValidation = (input) =>
   );
 
 const handleClickEvent = (event) => {
-  const email = document.getElementById("email").value || "";
-
-  if (emailValidation(email)) {
+  const emailDefault = document.getElementById("email-default").value || "";
+  const emailMobile = document.getElementById("email-mobile").value || "";
+  if (emailValidation(emailDefault) || emailValidation(emailMobile)) {
     alert("Successfull submit!");
   } else {
     event.preventDefault();
